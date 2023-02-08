@@ -16,6 +16,9 @@ class BoatLifestyle:
         self.driver.find_element(By.ID,"customer[password]").send_keys("12345Abcd*")
         self.driver.find_element(By.XPATH,"//span[@class='loader-button__text']").click()
 
+    def order(self):
+        return 0
+
 class PlaceOrder(BoatLifestyle):
     def order(self):
         self.driver.find_element(By.XPATH,"//a[@class='button button--primary']").click()
